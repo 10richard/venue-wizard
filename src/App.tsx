@@ -1,7 +1,27 @@
-import React from "react";
+import Discover from "./components/Discover";
+import Download from "./components/Download";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import NewsLetter from "./components/NewsLetter";
+import OurPromise from "./components/OurPromise";
+import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
 
-const App = () => {
-  return <div>App</div>;
-};
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Discover />
+      <OurPromise />
+      <Testimonials />
+      <Pricing />
+      <Download />
+      <NewsLetter />
+      <Footer />
+    </>
+  );
+}
 
 export default App;
