@@ -7,7 +7,9 @@ const Navbar = () => {
           alt="Venue wizard logo"
           className="w-20"
         />
-        <h1 className="text-2xl">VenueWizard</h1>
+        <h1 className="text-2xl">
+          Venue<span className="text-secondary">Wizard</span>
+        </h1>
       </div>
       <ul className="navbar__links flex">
         <li className="-ml-18 cursor-pointer">Discover</li>
@@ -15,7 +17,7 @@ const Navbar = () => {
         <li className="cursor-pointer">Pricing</li>
       </ul>
       <div className="navbar__buttons">
-        <button className="border bg-secondary py-1.5 px-3 rounded-xl">
+        <button className="border bg-secondary py-2 px-6 rounded-xl">
           Log In
         </button>
         <button className="ml-8 mr-10">Sign Up</button>
