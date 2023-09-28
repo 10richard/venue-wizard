@@ -8,14 +8,20 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="flex justify-between items-center bg-primary text-white w-full fixed top-0 z-30">
+      <div className="flex justify-between items-center bg-primary text-white w-full fixed top-0 z-30 py-3">
         <div className="flex justify-between items-center mx-auto w-5/6">
-          <div className="flex justify-between items-center w-full gap-16">
+          <div className="flex justify-between items-center w-full gap-14">
+            {/* LEFT SIDE */}
             <a href="#">
-              <img src={logo} alt="Venue wizard logo" className="p-3 w-60" />
+              <img
+                src={logo}
+                alt="Venue wizard logo"
+                className="max-w-[200px]"
+              />
             </a>
 
-            <div className="flex justify-between items-center w-full">
+            {/* RIGHT SIDE */}
+            <div className="flex justify-between items-center w-full max-[1060px]:hidden">
               <div className="flex justify-between items-center gap-8">
                 <ul className="navbar__links flex justify-between gap-10">
                   <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
@@ -45,22 +51,56 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
+          {/* MENU */}
+          <div className="min-[1060px]:hidden">
+            <img
+              className="w-8 cursor-pointer"
+              src={menu}
+              alt="menu"
+              onClick={() => {
+                setToggle((toggle) => !toggle);
+              }}
+            />
+          </div>
         </div>
       </div>
 
-      {/* MENU */}
+      {/* MENU MODAL */}
+      <div
+        className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1060px]:hidden ${
+          toggle ? "flex-col" : "hidden"
+        } bg-blueshit`}
+      >
+        <div className="flex justify-end pr-10 pt-8 mb-10">
+          <img
+            className="w-8 cursor-pointer"
+            src={close}
+            alt="close menu"
+            onClick={() => {
+              setToggle((toggle) => !toggle);
+            }}
+          />
+        </div>
 
-      <div className="mr-10 hidden">
-        <img
-          className="w-10 h-10 object-contain cursor-pointer"
-          src={toggle ? close : menu}
-          alt="menu"
-          onClick={() => {
-            setToggle((toggle) => !toggle);
-          }}
-        />
-
-        <div className={`${toggle ? "flex" : "hidden"}`}></div>
+        <ul className="navbar__links flex flex-col items-center gap-8 text-lg">
+          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+            <a href="#discover">Discover</a>
+          </li>
+          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+            <a href="#features">Features</a>
+            {/* Our Promise */}
+          </li>
+          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+            <a href="#pricing">Pricing</a>
+            {/* No hidden fees. No bs. - tired of hidden fees? */}
+          </li>
+          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+            <a href="#support">Support</a>
+            {/* Add live chat - sumn similar to Lysted */}
+            {/* Live chat - "Hi, this isn't really support, but I hope you like this project" */}
+          </li>
+        </ul>
       </div>
     </nav>
   );
