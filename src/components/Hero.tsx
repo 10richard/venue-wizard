@@ -22,7 +22,8 @@ const Hero = () => {
           </h1>
           <p className="opacity-60 max-[1060px]:text-xs text-sm mt-8">
             Experience live events, whether it's a heart-pounding concert,{" "}
-            <br /> a captivating theatre production, or a thrilling sports match
+            <br className="max-[465px]:hidden" /> a captivating theatre
+            production, or a thrilling sports match
           </p>
         </div>
 
