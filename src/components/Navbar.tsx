@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar mb-[5.5rem]">
       <div className="flex justify-between items-center bg-primary text-white w-full fixed top-0 z-30 py-3">
         <div className="flex justify-between items-center mx-auto w-5/6">
           <div className="flex justify-between items-center w-full gap-14">
@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* MENU */}
           <div className="min-[1060px]:hidden">
             <img
-              className="w-8 cursor-pointer"
+              className={`w-8 cursor-pointer ${toggle ? "hidden" : null}`}
               src={menu}
               alt="menu"
               onClick={() => {
@@ -68,9 +68,9 @@ const Navbar = () => {
 
       {/* MENU MODAL */}
       <div
-        className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1060px]:hidden ${
+        className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1060px]:hidden opacity-95 backdrop-blur-md bg-blueshit/80 text-lg ${
           toggle ? "flex-col" : "hidden"
-        } bg-blueshit`}
+        } `}
       >
         <div className="flex justify-end pr-10 pt-8 mb-10">
           <img
@@ -83,24 +83,29 @@ const Navbar = () => {
           />
         </div>
 
-        <ul className="navbar__links flex flex-col items-center gap-8 text-lg">
-          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
-            <a href="#discover">Discover</a>
-          </li>
-          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+        <ul className="navbar__links flex flex-col items-center gap-8 mb-16">
+          <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#features">Features</a>
             {/* Our Promise */}
           </li>
-          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+          <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
+            <a href="#discover">Discover</a>
+          </li>
+          <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#pricing">Pricing</a>
             {/* No hidden fees. No bs. - tired of hidden fees? */}
           </li>
-          <li className="cursor-pointer hover:bg-secondary hover:text-white p-2.5 rounded-lg duration-200">
+          <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#support">Support</a>
             {/* Add live chat - sumn similar to Lysted */}
             {/* Live chat - "Hi, this isn't really support, but I hope you like this project" */}
           </li>
         </ul>
+
+        <div className="flex justify-center items-center gap-12">
+          <button>Log In</button>
+          <button>Sign Up</button>
+        </div>
       </div>
     </nav>
   );
