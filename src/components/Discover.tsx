@@ -53,7 +53,7 @@ const Discover = () => {
   const [genre, setGenre] = useState<Genre>("topPicks");
 
   return (
-    <section id="discover" className="flex justify-center py-20 h-[80vh]">
+    <section id="discover" className="flex justify-center pt-10 my-10 h-[75vh]">
       <div className="flex flex-col items-center gap-4 shrink w-5/6">
         <h1 className="max-[1060px]:text-2xl text-3xl self-start font-bold">
           Discover what's next
@@ -106,7 +106,8 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="events flex w-full gap-8 flex-nowrap h-[375px] overflow-x-auto overflow-y-visible">
+        {/* Have to fix on mobile (iPhone SE) */}
+        <div className="events flex w-full gap-8 flex-nowrap overflow-x-scroll">
           {DiscoverGenres[genre].map((event: EventInfo, index: number) => (
             <div
               key={index}
