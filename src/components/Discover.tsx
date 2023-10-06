@@ -6,7 +6,7 @@ import drake from "../assets/discover-events/top-picks/drake.jpeg";
 import nba from "../assets/discover-events/sports/nba.jpg";
 import ufc from "../assets/discover-events/sports/ufc.jpeg";
 import nfl from "../assets/discover-events/sports/nfl.jpeg";
-import mlb from "../assets/discover-events/sports/mlb.jpeg";
+import mlb from "../assets/discover-events/sports/mlb.jpg";
 import billyJoel from "../assets/discover-events/concerts/billy-joel.jpeg";
 import beyonce from "../assets/discover-events/concerts/beyonce.jpeg";
 import sza from "../assets/discover-events/concerts/sza.jpeg";
@@ -32,8 +32,8 @@ const Discover = () => {
     ],
     sports: [
       { name: "NBA", img: nba },
-      { name: "UFC", img: ufc },
       { name: "NFL", img: nfl },
+      { name: "UFC", img: ufc },
       { name: "MLB", img: mlb },
     ],
     concerts: [
