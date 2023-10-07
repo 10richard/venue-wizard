@@ -1,12 +1,13 @@
 import { useState } from "react";
-import taylorSwift from "../assets/discover-events/taylor-swift.jpeg";
+import taylorSwiftTopPicks from "../assets/discover-events/top-picks/taylor-swift.jpeg";
 import oliviaRodrigo from "../assets/discover-events/top-picks/olivia-rodrigo.jpeg";
 import noahKahan from "../assets/discover-events/top-picks/noah-kahan.jpeg";
 import drake from "../assets/discover-events/top-picks/drake.jpeg";
 import nba from "../assets/discover-events/sports/nba.jpg";
 import ufc from "../assets/discover-events/sports/ufc.jpeg";
 import nfl from "../assets/discover-events/sports/nfl.jpeg";
-import mlb from "../assets/discover-events/sports/mlb.jpg";
+import mlb from "../assets/discover-events/sports/mlb.jpeg";
+import taylorSwiftConcerts from "../assets/discover-events/concerts/taylor-swift.jpeg";
 import billyJoel from "../assets/discover-events/concerts/billy-joel.jpeg";
 import beyonce from "../assets/discover-events/concerts/beyonce.jpeg";
 import sza from "../assets/discover-events/concerts/sza.jpeg";
@@ -28,7 +29,7 @@ const Discover = () => {
       { name: "Olivia Rodrigo", img: oliviaRodrigo },
       { name: "Noah Kahan", img: noahKahan },
       { name: "Drake", img: drake },
-      { name: "Taylor Swift", img: taylorSwift },
+      { name: "Taylor Swift", img: taylorSwiftTopPicks },
     ],
     sports: [
       { name: "NBA", img: nba },
@@ -37,10 +38,10 @@ const Discover = () => {
       { name: "MLB", img: mlb },
     ],
     concerts: [
-      { name: "Taylor Swift", img: taylorSwift },
+      { name: "Taylor Swift", img: taylorSwiftConcerts },
       { name: "Billy Joel", img: billyJoel },
-      { name: "Beyoncé", img: beyonce },
       { name: "SZA", img: sza },
+      { name: "Beyoncé", img: beyonce },
     ],
     theatres: [
       { name: "Dave Chappelle", img: daveChappelle },
@@ -59,7 +60,7 @@ const Discover = () => {
           Discover what's next
         </h1>
 
-        <div className="flex self-start gap-6 max-[1060px]:text-sm mb-4">
+        <div className="flex self-start gap-6 max-[1060px]:text-sm mb-4 px-1">
           <div>
             <button
               id="topPicks"
@@ -106,12 +107,11 @@ const Discover = () => {
           </div>
         </div>
 
-        {/* Have to fix on mobile (iPhone SE) */}
-        <div className="events flex w-full gap-8 flex-nowrap overflow-x-scroll">
+        <div className="events flex w-full gap-8 flex-nowrap overflow-x-scroll h-[400px] px-2">
           {DiscoverGenres[genre].map((event: EventInfo, index: number) => (
             <div
               key={index}
-              className="border-primary border-2 hover:border-secondary hover:shadow-secondary duration-500 shadow-sm w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden cursor-pointer"
+              className="hover:border-secondary hover:shadow-secondary duration-500 shadow-md w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden cursor-pointer"
             >
               <img
                 className="object-cover h-[275px]"
