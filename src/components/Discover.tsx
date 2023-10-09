@@ -64,7 +64,7 @@ const Discover = () => {
           <div>
             <button
               id="topPicks"
-              className={genre == "topPicks" ? "opacity-100" : "opacity-50"}
+              className={genre === "topPicks" ? "opacity-100" : "opacity-50"}
               onClick={() => {
                 setGenre("topPicks");
               }}
@@ -75,7 +75,7 @@ const Discover = () => {
           <div>
             <button
               id="sports"
-              className={genre == "sports" ? "opacity-100" : "opacity-50"}
+              className={genre === "sports" ? "opacity-100" : "opacity-50"}
               onClick={() => {
                 setGenre("sports");
               }}
@@ -86,7 +86,7 @@ const Discover = () => {
           <div>
             <button
               id="concerts"
-              className={genre == "concerts" ? "opacity-100" : "opacity-50"}
+              className={genre === "concerts" ? "opacity-100" : "opacity-50"}
               onClick={() => {
                 setGenre("concerts");
               }}
@@ -97,7 +97,7 @@ const Discover = () => {
           <div>
             <button
               id="theatres"
-              className={genre == "theatres" ? "opacity-100" : "opacity-50"}
+              className={genre === "theatres" ? "opacity-100" : "opacity-50"}
               onClick={() => {
                 setGenre("theatres");
               }}
