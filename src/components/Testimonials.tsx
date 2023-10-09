@@ -97,41 +97,6 @@ const Testimonials = () => {
             ))}
           </div>
         </div>
-
-        {/* <div className="carousel-container flex flex-col items-center gap-7 overflow-hidden">
-          <div className="carousel-dots flex gap-10">
-            {Testimonials.map((_, idx) => (
-              <div
-                className={`carousel-dot bg-white p-1.5 rounded-full cursor-pointer ${
-                  index === idx ? "opacity-100" : "opacity-50"
-                }`}
-                onClick={() => setIndex(idx)}
-              ></div>
-            ))}
-          </div>
-
-          <div
-            className="carousel-slides whitespace-nowrap"
-            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-          >
-            {Testimonials.map((testimonial, idx) => (
-              <div
-                key={idx}
-                className="carousel-slide max-[725px]:w-[350px] w-[550px] h-[225px] gap-5 bg-white max-[725px]:px-10 px-20 py-8 rounded-lg border-l-4 border-pink inline-block"
-              >
-                <p className="max-[725px]:text-sm">"{testimonial.review}"</p>
-                <div className="flex justify-between items-center">
-                  <h2 className="text-xl">{testimonial.customer_name}</h2>
-                  <img
-                    className="w-16"
-                    src={closedQuote}
-                    alt="closed quote icon"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );
