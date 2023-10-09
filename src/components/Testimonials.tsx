@@ -29,7 +29,7 @@ const Testimonials = () => {
         "Venue Wizard saved the day when I thought I'd missed out on a sold-out show. Thanks for making it possible!",
     },
   ];
-  const delay: number = 4000;
+  const delay: number = 4500;
 
   const [index, setIndex] = useState<number>(0);
   const timeoutRef: any = useRef(null);
@@ -56,7 +56,7 @@ const Testimonials = () => {
 
   return (
     <section id="testiomonials">
-      <div className="w-full py-20 bg-primary flex max-[1060px]:flex-col max-[1060px]:gap-14 items-center justify-around text-center">
+      <div className="w-full py-16 bg-primary flex max-[1060px]:flex-col max-[1060px]:gap-14 items-center justify-around text-center">
         <h1 className="max-[1060px]:text-3xl text-4xl font-bold text-white">
           Customer Testimonials
         </h1>
