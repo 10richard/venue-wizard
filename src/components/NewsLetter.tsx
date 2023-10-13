@@ -19,7 +19,6 @@ const NewsLetter = () => {
           <button className="bg-secondary p-4 rounded-xl">Join the List</button>
         </div>
       </div>
-      {/* Sign up for our newsletter to never miss out on any promotions or discounts */}
     </section>
   );
 };
