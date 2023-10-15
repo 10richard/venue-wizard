@@ -19,7 +19,7 @@ const Pricing = () => {
         </div>
 
         <img
-          className="w-[300px] bg-babyblue/60 rounded-full p-10 border-pink border-4"
+          className="w-[300px] bg-babyblue/60 rounded-full p-10 border-pink border-4 brightness-110"
           src={pricingIcon}
           alt="Best price icon"
         />
