@@ -5,26 +5,26 @@ const Footer = () => {
         <div className="border-white border-x-2 px-6 w-[250px]">
           <h1 className="text-xl font-bold mb-4">Our Company</h1>
           <div className="flex flex-col gap-1">
-            <p className="text-sm cursor-pointer">About Us</p>
-            <p className="text-sm cursor-pointer">Partners</p>
-            <p className="text-sm cursor-pointer">Affiliate Program</p>
-            <p className="text-sm cursor-pointer">Careers</p>
+            <p className="text-sm cursor-pointer w-fit">About Us</p>
+            <p className="text-sm cursor-pointer w-fit">Partners</p>
+            <p className="text-sm cursor-pointer w-fit">Affiliate Program</p>
+            <p className="text-sm cursor-pointer w-fit">Careers</p>
           </div>
         </div>
         <div className="border-white border-x-2 px-6 w-[250px]">
           <h1 className="text-xl font-bold mb-4">Social</h1>
           <div className="flex flex-col gap-1">
-            <p className="text-sm cursor-pointer">Twitter</p>
-            <p className="text-sm cursor-pointer">Instagram</p>
-            <p className="text-sm cursor-pointer">Facebook</p>
+            <p className="text-sm cursor-pointer w-fit">Twitter</p>
+            <p className="text-sm cursor-pointer w-fit">Instagram</p>
+            <p className="text-sm cursor-pointer w-fit">Facebook</p>
           </div>
         </div>
         <div className="border-white border-x-2 px-6 w-[250px]">
           <h1 className="text-xl font-bold mb-4">Support</h1>
           <div className="flex flex-col gap-1">
-            <p className="text-sm cursor-pointer">Contact Us</p>
-            <p className="text-sm cursor-pointer">Community</p>
-            <p className="text-sm cursor-pointer">FAQ</p>
+            <p className="text-sm cursor-pointer w-fit">Contact Us</p>
+            <p className="text-sm cursor-pointer w-fit">Community</p>
+            <p className="text-sm cursor-pointer w-fit">FAQ</p>
           </div>
         </div>
       </div>
