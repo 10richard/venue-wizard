@@ -16,7 +16,7 @@ const NewsLetter = () => {
             type="text"
             placeholder="Email Address"
           />
-          <button className="bg-secondary p-4 rounded-xl text-white hover:brightness-[.85] duration-500">
+          <button className="bg-secondary p-4 rounded-xl text-white hover:brightness-[.85] duration-300">
             Join the List
           </button>
         </div>

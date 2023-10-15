@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import NewsLetter from "./components/NewsLetter";
-import OurPromise from "./components/OurPromise";
+import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 
@@ -13,9 +13,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Discover />
-      <OurPromise />
+      <Features />
       <Testimonials />
+      <Discover />
       <Pricing />
       <Download />
       <NewsLetter />

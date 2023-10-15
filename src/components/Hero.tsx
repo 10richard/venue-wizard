@@ -2,7 +2,7 @@ import hero from "../assets/hero-img.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section h-[95vh] bg-moreblueshit py-10 flex justify-center">
+    <section className="hero-section h-[95vh] bg-lightblue py-10 flex justify-center">
       <div className="hero-content flex justify-center items-center max-[1060px]:flex-col max-[1060px]:mt-36 w-[80%]">
         <div className="hero-content__text font-bold flex flex-col -mt-36">
           <p className="max-[1060px]:hidden text-xl mb-5">

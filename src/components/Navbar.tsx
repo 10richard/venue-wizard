@@ -6,6 +6,7 @@ import close from "../assets/close.svg";
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
 
+  // Make navbar change colors on scroll
   return (
     <nav className="navbar mb-[5.5rem]">
       <div className="flex justify-between items-center bg-primary text-white w-full fixed top-0 z-30 py-3">
@@ -21,25 +22,25 @@ const Navbar = () => {
             </a>
 
             {/* RIGHT SIDE */}
-            <div className="flex justify-between items-center w-full max-[1060px]:hidden">
+            <div className="flex justify-between items-center w-full max-[1150px]:hidden">
               <div className="flex justify-between items-center gap-8">
                 <ul className="navbar__links flex justify-between gap-10">
-                  <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
-                    <a href="#discover">Discover</a>
-                  </li>
                   <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
                     <a href="#features">Features</a>
                     {/* Our Promise */}
                   </li>
                   <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
+                    <a href="#discover">Discover</a>
+                  </li>
+                  <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
                     <a href="#pricing">Pricing</a>
                     {/* No hidden fees. No bs. - tired of hidden fees? */}
                   </li>
-                  <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
+                  {/* <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
                     <a href="#support">Support</a>
-                    {/* Add live chat - sumn similar to Lysted */}
-                    {/* Live chat - "Hi, this isn't really support, but I hope you like this project" */}
-                  </li>
+                    Add live chat - sumn similar to Lysted
+                    Live chat - "Hi, this isn't really support, but I hope you like this project"
+                  </li> */}
                 </ul>
               </div>
 
@@ -53,7 +54,7 @@ const Navbar = () => {
           </div>
 
           {/* MENU */}
-          <div className="min-[1060px]:hidden">
+          <div className="min-[1150px]:hidden">
             <img
               className={`w-8 cursor-pointer ${toggle ? "hidden" : null}`}
               src={menu}
@@ -68,7 +69,7 @@ const Navbar = () => {
 
       {/* MENU MODAL */}
       <div
-        className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1060px]:hidden opacity-95 backdrop-blur-md bg-blueshit/80 text-lg ${
+        className={`fixed right-0 bottom-0 z-40 h-full w-[300px] min-[1150px]:hidden opacity-95 backdrop-blur-md bg-babyblue/80 text-lg ${
           toggle ? "flex-col" : "hidden"
         } `}
       >

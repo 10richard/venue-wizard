@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-content__img {
+    animation: MoveUpDown 2s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
+
+.events::-webkit-scrollbar {
+  display: none;
+}

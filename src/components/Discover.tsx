@@ -54,7 +54,7 @@ const Discover = () => {
   const [genre, setGenre] = useState<Genre>("topPicks");
 
   return (
-    <section id="discover" className="flex justify-center pt-10 my-10 h-[75vh]">
+    <section id="discover" className="flex justify-center pt-32 mb-10">
       <div className="flex flex-col items-center gap-4 shrink w-5/6">
         <h1 className="max-[1060px]:text-2xl text-3xl self-start font-bold">
           Discover what's next
