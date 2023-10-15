@@ -11,8 +11,9 @@ export default {
       colors: {
         primary: "#27005D",
         secondary: "#9400FF",
-        blueshit: "#AED2FF",
-        moreblueshit: "#E4F1FF"
+        pink: "#DF4FF2",
+        babyblue: "#AED2FF",
+        lightblue: "#E4F1FF"
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans]
