@@ -10,7 +10,7 @@ such as vividseats, stubhub, tickpick, etc.
 
 # <h3>Built with:</h3>
 
-<p>∙ React JS</p>
+<p>∙ React w/ Typescript</p>
 <p>∙ Tailwind</p>
 
 # <h3>Screenshot of the Project</h3>

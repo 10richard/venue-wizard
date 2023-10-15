@@ -5,11 +5,26 @@ import close from "../assets/close.svg";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
+  const [navbar, setNavbar] = useState<boolean>(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   // Make navbar change colors on scroll
   return (
     <nav className="navbar mb-[5.5rem]">
-      <div className="flex justify-between items-center bg-primary text-white w-full fixed top-0 z-30 py-3">
+      <div
+        className={`flex justify-between items-center text-white w-full fixed top-0 z-30 py-3 duration-700 ${
+          navbar ? "bg-black bg-opacity-80" : "bg-primary"
+        }`}
+      >
         <div className="flex justify-between items-center mx-auto w-5/6">
           <div className="flex justify-between items-center w-full gap-14">
             {/* LEFT SIDE */}
@@ -36,11 +51,6 @@ const Navbar = () => {
                     <a href="#pricing">Pricing</a>
                     {/* No hidden fees. No bs. - tired of hidden fees? */}
                   </li>
-                  {/* <li className="cursor-pointer hover:bg-secondary p-2.5 rounded-lg duration-200">
-                    <a href="#support">Support</a>
-                    Add live chat - sumn similar to Lysted
-                    Live chat - "Hi, this isn't really support, but I hope you like this project"
-                  </li> */}
                 </ul>
               </div>
 
@@ -87,7 +97,6 @@ const Navbar = () => {
         <ul className="navbar__links flex flex-col items-center gap-8 mb-16">
           <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#features">Features</a>
-            {/* Our Promise */}
           </li>
           <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#discover">Discover</a>
@@ -95,11 +104,6 @@ const Navbar = () => {
           <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
             <a href="#pricing">Pricing</a>
             {/* No hidden fees. No bs. - tired of hidden fees? */}
-          </li>
-          <li className="cursor-pointer hover:bg-white p-2.5 rounded-lg duration-200">
-            <a href="#support">Support</a>
-            {/* Add live chat - sumn similar to Lysted */}
-            {/* Live chat - "Hi, this isn't really support, but I hope you like this project" */}
           </li>
         </ul>
 
