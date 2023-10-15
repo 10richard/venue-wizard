@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div>
         <h1>
-          @2023 VenueWizard by{" "}
+          ©2023 VenueWizard by{" "}
           <a target="_blank" href="https://github.com/10richard/venue-wizard">
             10richard
           </a>
