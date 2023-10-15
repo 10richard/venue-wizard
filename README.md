@@ -1,8 +1,20 @@
-# VenueWizard
+<h1>VenueWizard</h1>
 
-Landing page for a ticket exchange/marketplace
+# <h3>About</h3>
 
-Used React w/ Typescript and Tailwind
+A landing page for a ticket exchange/marketplace designed to
+welcome and engage users interested in buying or selling event tickets.
 
 Got inspiration for website design from other ticket exchanges
 such as vividseats, stubhub, tickpick, etc.
+
+# <h3>Built with:</h3>
+
+∙ React JS
+∙ Tailwind
+
+# <h3>Screenshots of the Project</h3>
+
+<p>
+    <img src="./src/assets/webpage-screenshot.png">
+</p>
