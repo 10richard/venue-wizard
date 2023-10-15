@@ -10,10 +10,10 @@ such as vividseats, stubhub, tickpick, etc.
 
 # <h3>Built with:</h3>
 
-∙ React JS
-∙ Tailwind
+<p>∙ React JS</p>
+<p>∙ Tailwind</p>
 
-# <h3>Screenshots of the Project</h3>
+# <h3>Screenshot of the Project</h3>
 
 <p>
     <img src="./src/assets/webpage-screenshot.png">
