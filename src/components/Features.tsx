@@ -8,7 +8,7 @@ const Features = () => {
       <div className="flex flex-col items-center justify-center w-full gap-16">
         <h1 className="text-5xl font-bold">Features</h1>
         <div className="flex max-[1060px]:flex-col flex-wrap max-[1060px]:gap-20 gap-12 items-center justify-center">
-          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[450px] max-[400px]:px-4 px-12">
+          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[400px] max-[400px]:px-4 px-12">
             <img
               className="w-[125px] bg-pink rounded-full p-5"
               src={seatOutline}
@@ -22,7 +22,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[450px] max-[400px]:px-4 px-12">
+          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[400px] max-[400px]:px-4 px-12">
             <img
               className="w-[125px] bg-pink rounded-full p-5"
               src={handshakeOutline}
@@ -36,7 +36,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[450px] max-[400px]:px-4 max-[1060px]:px-4 px-12">
+          <div className="feature flex flex-col items-center gap-8 min-[1060px]:w-[400px] max-[400px]:px-4 max-[1060px]:px-4 px-12">
             <img
               className="w-[125px] bg-pink rounded-full p-5"
               src={shieldOutline}
