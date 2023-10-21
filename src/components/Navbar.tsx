@@ -25,8 +25,8 @@ const Navbar = () => {
           navbar ? "bg-black bg-opacity-80" : "bg-primary"
         }`}
       >
-        <div className="flex justify-between items-center mx-auto w-5/6">
-          <div className="flex justify-between items-center w-full gap-14">
+        <div className="flex justify-between items-center mx-auto w-full px-10">
+          <div className="flex justify-between items-center w-full gap-8">
             {/* LEFT SIDE */}
             <a href="#">
               <img

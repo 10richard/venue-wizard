@@ -1,4 +1,4 @@
-import pricingIcon from "../assets/save-money.svg";
+import pricingIcon from "../assets/save-money.png";
 
 const Pricing = () => {
   return (
@@ -19,7 +19,7 @@ const Pricing = () => {
         </div>
 
         <img
-          className="w-[300px] bg-babyblue/60 rounded-full p-10 border-pink border-4 brightness-110"
+          className="w-[350px] rounded-full brightness-110"
           src={pricingIcon}
           alt="Best price icon"
         />
