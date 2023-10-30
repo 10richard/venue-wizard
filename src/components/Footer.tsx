@@ -31,7 +31,11 @@ const Footer = () => {
       <div>
         <h1>
           ©2023 VenueWizard by{" "}
-          <a target="_blank" href="https://github.com/10richard/venue-wizard">
+          <a
+            className="hover:text-pink"
+            target="_blank"
+            href="https://github.com/10richard/venue-wizard"
+          >
             10richard
           </a>
         </h1>
