@@ -5,11 +5,13 @@ import applePlayBadge from "../assets/mobile-app-badges/apple-store-badge.png";
 const Download = () => {
   return (
     <section className="flex justify-center pt-16 mb-20">
-      <div className="flex justify-around w-11/12 max-[1000px]:flex-col max-[1000px]:justify-center max-[1000px]:items-center max-[1000px]:gap-16 bg-secondary/80 rounded-3xl px-10 pt-12">
+      <div className="flex justify-around w-[90%] max-[1000px]:flex-col max-[1000px]:justify-center max-[1000px]:items-center max-[1000px]:gap-16 bg-secondary/80 rounded-3xl px-10 pt-12">
         {/* Left side  */}
         <div className="flex flex-col gap-12 max-[900px]:items-center">
-          <div className="w-[490px] max-[900px]:w-[350px] max-[900px]:text-center text-white">
-            <h1 className="text-4xl font-bold mb-2">Download our App</h1>
+          <div className="w-[490px] max-[900px]:w-[285px] max-[900px]:text-center text-white">
+            <h1 className="text-4xl max-[900px]:text-3xl font-bold mb-2">
+              Download our App
+            </h1>
             <p className="opacity-80 max-[900px]:text-sm">
               Easily secure tickets on the go, get timely event reminders, and
               unlock special in-app perks by downloading our mobile app today
