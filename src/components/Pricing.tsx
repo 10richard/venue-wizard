@@ -7,7 +7,7 @@ const Pricing = () => {
       className="flex justify-center items-center pt-32 pb-20 bg-lightblue mb-10"
     >
       <div className="flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:gap-20 w-5/6 justify-around">
-        <div className="flex flex-col gap-4 max-[1000px]:w-[325px] w-[450px] pt-8 max-[1000px]:text-center">
+        <div className="flex flex-col gap-4 max-[1000px]:w-[340px] w-[450px] pt-8 max-[1000px]:text-center">
           <h1 className="max-[1000px]:text-4xl text-5xl font-bold">
             Savings Without Sneaky Changes
           </h1>
