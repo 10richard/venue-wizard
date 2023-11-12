@@ -25,14 +25,14 @@ const Navbar = () => {
           navbar ? "bg-black bg-opacity-80" : "bg-primary"
         }`}
       >
-        <div className="flex justify-between items-center mx-auto w-full px-10">
+        <div className="flex justify-between items-center mx-auto w-full px-5">
           <div className="flex justify-between items-center w-full gap-8">
             {/* LEFT SIDE */}
             <a href="#">
               <img
                 src={logo}
                 alt="Venue wizard logo"
-                className="max-w-[200px]"
+                className="max-w-[150px]"
               />
             </a>
 

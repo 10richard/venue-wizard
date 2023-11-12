@@ -3,7 +3,7 @@ import heroBackground from "../assets/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section h-[85vh] bg-lightblue pt-8 flex justify-center relative">
+    <section className="hero-section h-[85vh] bg-lightblue pt-8 flex justify-center relative -mt-[14px]">
       <div className="hero-content flex items-center max-[1300px]:justify-around max-[1300px]:flex-col max-[1300px]:mt-36 w-[80%]">
         <img
           className="absolute top-0 right-0 h-full rounded-l-[300px] max-[1300px]:hidden"
