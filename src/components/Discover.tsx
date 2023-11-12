@@ -54,13 +54,11 @@ const Discover = () => {
   const [genre, setGenre] = useState<Genre>("topPicks");
 
   return (
-    <section id="discover" className="flex justify-center pt-32 mb-10">
-      <div className="flex flex-col items-center gap-4 shrink w-5/6">
-        <h1 className="max-[1060px]:text-2xl text-3xl self-start font-bold">
-          Discover what's next
-        </h1>
+    <section id="discover" className="flex justify-center pt-20 mb-10">
+      <div className="grid justify-center place-items-center gap-4 w-[90%]">
+        <h1 className=" text-3xl font-bold">Discover what's next</h1>
 
-        <div className="flex self-start gap-6 max-[1060px]:text-sm mb-4 px-1">
+        <div className="flex gap-6 max-[1060px]:text-sm mb-4 px-1">
           <div>
             <button
               id="topPicks"
@@ -107,14 +105,14 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="events flex w-full gap-8 flex-nowrap overflow-x-scroll h-[400px] px-2">
+        <div className="events flex items-center w-full gap-8 whitespace-nowrap overflow-x-scroll h-[475px] px-2">
           {DiscoverGenres[genre].map((event: EventInfo, index: number) => (
             <div
               key={index}
-              className="hover:border-secondary hover:shadow-secondary duration-500 shadow-md w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden cursor-pointer"
+              className="hover:border-secondary hover:shadow-secondary duration-500 shadow-md w-[300px] h-[425px] flex-shrink-0 rounded-xl overflow-hidden cursor-pointer"
             >
               <img
-                className="object-cover h-[275px]"
+                className="object-cover h-[350px]"
                 src={event.img}
                 alt={event.name}
               />
