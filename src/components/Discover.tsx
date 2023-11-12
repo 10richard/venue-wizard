@@ -56,7 +56,9 @@ const Discover = () => {
   return (
     <section id="discover" className="flex justify-center pt-20 mb-10">
       <div className="grid justify-center place-items-center gap-4 w-[90%]">
-        <h1 className=" text-3xl font-bold">Discover what's next</h1>
+        <h1 className="max-[450px]:text-2xl text-3xl font-bold">
+          Discover what's next
+        </h1>
 
         <div className="flex gap-6 max-[1060px]:text-sm mb-4 px-1">
           <div>
